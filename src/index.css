@@ -445,7 +445,7 @@ font-size: 2rem;
   }
   
   .form-field {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -527,7 +527,7 @@ font-size: 2rem;
   .footer-text {
     font-size: 14px;
     line-height: 1.6;
-    
+
   }
   
   .footer-list {

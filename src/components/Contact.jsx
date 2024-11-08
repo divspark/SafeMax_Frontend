@@ -5,7 +5,7 @@ function Contact() {
     name: '',
     email: '',
     phone: '',
-    preferredDate: '',
+    preferredDateTime: '',  // Updated field name
     message: ''
   });
 
@@ -52,6 +52,18 @@ function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div className="form-field">
+              <label htmlFor="preferredDateTime">Preferred Date & Time:</label>
+              <input
+                type="datetime-local"
+                id="preferredDateTime"
+                name="preferredDateTime"
+                value={formData.preferredDateTime}
+                onChange={handleChange}
                 required
               />
             </div>

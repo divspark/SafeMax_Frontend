@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4 className="section-title">Connect With Us</h4>
           <div className="social-icons">
-            <a href="https://www.linkedin.com/company/safemaxsecurity" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/company/safemax-security/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaLinkedin />
             </a>
             <a href="https://www.twitter.com/safemaxsecurity" target="_blank" rel="noopener noreferrer" className="social-icon">
