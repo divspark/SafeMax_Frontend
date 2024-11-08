@@ -30,13 +30,14 @@ function NavBar() {
             </label>
             <ul className='menu'>
                 <li><Link to='/'>Home</Link></li>  {/* Use Link instead of <a> */}
-                <li><Link to='#about'>About Us</Link></li>
-                <li><Link to='#Features'>Services</Link></li>
-                <li><Link to='#Contact'>Contact Us</Link></li>
-                <li><Link to='/login'>Sign In</Link></li> {/* Use Link for Sign In */}
+                <li><a href='#about'>About Us</a></li>
+                <li><a href='#Features'>Services</a></li>
+                <li><a href='#Contact'>Contact Us</a></li>
+                <li><Link to='/signin'>Sign In</Link></li> {/* Use Link for Sign In */}
             </ul>
         </nav>
     );
 }
 
 export default NavBar;
+
