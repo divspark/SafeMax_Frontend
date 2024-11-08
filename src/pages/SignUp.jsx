@@ -1,69 +1,89 @@
-import React, { useState } from 'react';
-import '../styles/auth.css';
+import React from "react";
+import "../styles/auth.css"; // Import the CSS file
 
-const SignUp = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Sign Up Form Submitted:', formData);
-    // Handle sign-up logic here (e.g., send data to API)
-  };
-
+export default function Example() {
   return (
-    <div className="auth-container">
-      <div className="auth-form-container">
-        <h2>Sign Up</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="auth-form-field">
-            <label>Name</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
+    <div className="container">
+      <div className="form-container">
+        <img
+          alt="Your Company"
+          src="Logo.png"
+          className="logo"
+        />
+        <h2 className="heading">Create your account</h2>
+
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form action="#" method="POST" className="space-y-6">
+          <div className="form-group">
+              <label htmlFor="name" className="label">
+                Name
+              </label>
+              <div className="mt-2">
+                <input
+                  id="name"
+                  name="name"
+                  type="name"
+                  required
+                  autoComplete="name"
+                  className="input"
+                />
+              </div>
+            </div>
+            <div className="form-group">
+              <label htmlFor="email" className="label">
+                Email address
+              </label>
+              <div className="mt-2">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  autoComplete="email"
+                  className="input"
+                />
+              </div>
+            </div>
+
+            <div className="form-group">
+              <div className="flex items-center justify-between">
+                <label htmlFor="password" className="label">
+                  Password
+                </label>
+              </div>
+              <div className="mt-2">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  required
+                  autoComplete="current-password"
+                  className="input"
+                />
+              </div>
+            </div>
+
+            <div>
+              <button type="submit" className="submit-btn">
+                Sign Up
+              </button>
+            </div>
+          </form>
+
+          <div className="text-sm">
+            <a href="#" className="forgot-password">
+              Already have a account? Sign In
+            </a>
           </div>
-          <div className="auth-form-field">
-            <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="auth-form-field">
-            <label>Password</label>
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button type="submit" className="auth-submit-button">
-            Sign Up
-          </button>
-        </form>
+
+          <p className="footer-text">
+            Not a member?{" "}
+            <a href="#" className="footer-link">
+              Start a 14 day free trial
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
-};
-
-export default SignUp;
+}

@@ -1,72 +1,120 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+/* styles.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url(bg-image2.jpg);
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  margin-top: 50px;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1.5rem;
   
-  body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
-  }
-  
-  .auth-container {
-    position: relative;
-    height: 100%;
-    background-image: url('bg-image2.jpg'); /* Replace with your image */
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: brightness(50%); /* Adds the faded effect */
-  }
-  
-  .auth-form-container {
-    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .auth-form-field {
-    margin-bottom: 15px;
-  }
-  
-  .auth-form-field label {
-    font-size: 1rem;
-    color: #333;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .auth-form-field input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-  }
-  
-  .auth-submit-button {
-    width: 100%;
-    padding: 10px;
-    font-size: 1.1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .auth-submit-button:hover {
-    background-color: #0056b3;
-  }
+}
+
+.form-container {
+  margin-top: 2.5rem;
+  max-width: 24rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 50px 2px 50px;
+  border-radius: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  height: 3.5rem;
+  width: auto;
+}
+
+.heading {
+  margin-top: 2.0rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1a202c; /* Gray 900 */
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1a202c; /* Gray 900 */
+  margin-bottom: 5px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  border: 1px solid #e2e8f0; /* Gray 300 */
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  color: #1a202c; /* Gray 900 */
+  background-color: white;
+  box-shadow: 0 0 0 1px inset #e2e8f0; /* Gray 300 */
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4c51bf; /* Indigo 600 */
+  box-shadow: 0 0 0 2px inset #4c51bf; /* Indigo 600 */
+}
+
+.forgot-password {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #5a67d8; /* Indigo 600 */
+}
+
+.forgot-password:hover {
+  color: #4c51bf; /* Indigo 500 */
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #4c51bf; /* Indigo 600 */
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 0 2px inset #4c51bf; /* Indigo 600 */
+}
+
+.submit-btn:hover {
+  background-color: #5a67d8; /* Indigo 500 */
+}
+
+.footer-text {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280; /* Gray 500 */
+}
+
+.footer-link {
+  font-weight: 600;
+  color: #5a67d8; /* Indigo 600 */
+}
+
+.footer-link:hover {
+  color: #4c51bf; /* Indigo 500 */
+}
+
+.text-sm{
+  margin-top: 10px;
+}
