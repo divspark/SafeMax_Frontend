@@ -10,7 +10,7 @@ const Footer = () => {
         <img src="Logo2.png" height={80} alt='Logo' />
         <div className="footer-section">
             <h4 className="section-title">About SafeMax Security</h4>
-            <p className="footer-text">
+            <p className="footer-list-item">
               SafeMax Security specializes in cybersecurity innovation, securing digital assets with tailored VAPT solutions, trusted by clients worldwide.
             </p>
           </div>
@@ -30,9 +30,9 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="footer-section">
           <h4 className="section-title">Contact Us</h4>
-          <p className="footer-text">Email: info@safemaxsecurity.com</p>
-          <p className="footer-text">Phone: +1 (555) 123-4567</p>
-          <p className="footer-text">Address: 123 Cyber St, Security City, SC 12345</p>
+          <p className="footer-list-item">Email: info@safemaxsecurity.com</p>
+          <p className="footer-list-item">Phone: +1 (555) 123-4567</p>
+          <p className="footer-list-item">Address: 123 Cyber St, Security City, SC 12345</p>
         </div>
 
         {/* Social Media Links */}
