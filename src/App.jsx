@@ -1,22 +1,27 @@
-import React from 'react';
-import Features from './Components/Features';
-import Header from './Components/Header';
-import Contact from './components/Contact';
-import Presentation from './components/Presentation';
-import About from './components/about';
-import AboutImage from './images/Frame 19.png';
-import AboutImage1 from './images/download.png';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import AboutImage1 from "./images/download.png";
+import Features from "./components/Services";
+import WhyChooseUs from "./components/WhyChooseUs";
+import Contact from "./components/Contact";
+import LandingPage from "./pages/LandingPage"; // Create this component
+import Login from "./pages/Login"; // Create this component
+import SignUp from "./pages/SignUp"; // Create this component
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Features />
-      <About image={AboutImage} title='Comes With All You Need For Daily Life' button='Get The App' />
-      <Presentation />
-      <About image={AboutImage1} title='Comes With All You Need For Daily Life' button='Download' />
-      <Contact />
-    </div> 
+    <Router>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<LandingPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
+    </Router>
   );
 }
 

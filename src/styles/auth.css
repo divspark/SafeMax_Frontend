@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .auth-container {
+    position: relative;
+    height: 100%;
+    background-image: url('bg-image2.jpg'); /* Replace with your image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(50%); /* Adds the faded effect */
+  }
+  
+  .auth-form-container {
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .auth-form-field {
+    margin-bottom: 15px;
+  }
+  
+  .auth-form-field label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .auth-form-field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .auth-submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .auth-submit-button:hover {
+    background-color: #0056b3;
+  }
