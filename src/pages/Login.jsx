@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/auth.css"; // Import the CSS file
 
 export default function Example() {
@@ -62,10 +63,9 @@ export default function Example() {
           </div>
 
           <p className="footer-text">
-            Not a member?{" "}
-            <a href="#" className="footer-link">
-              Start a 14 day free trial
-            </a>
+          <Link to="/signup" className="footer-link">
+              Don't have an account? Sign Up
+            </Link>
           </p>
         </div>
       </div>

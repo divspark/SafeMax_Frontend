@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     const [nav, setNav] = useState(false);
@@ -28,11 +29,11 @@ function NavBar() {
                 <span className='nav-icon'></span>
             </label>
             <ul className='menu'>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#about'>About Us</a></li>
-                <li><a href='#Features'>Services</a></li>
-                <li><a href='#Contact'>Contact Us</a></li>
-                <li><a href='#'>Sign In</a></li>
+                <li><Link to='/'>Home</Link></li>  {/* Use Link instead of <a> */}
+                <li><Link to='#about'>About Us</Link></li>
+                <li><Link to='#Features'>Services</Link></li>
+                <li><Link to='#Contact'>Contact Us</Link></li>
+                <li><Link to='/login'>Sign In</Link></li> {/* Use Link for Sign In */}
             </ul>
         </nav>
     );
