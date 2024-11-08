@@ -4,7 +4,7 @@ function About(props) {
   return (
     <div id="about">
       <div className="about-image">
-        <img src={props.image} alt="" />
+        <img src="mobile2.png" alt="mobile" />
       </div>
       <div className="about-text">
         <h2>About Us</h2>
@@ -18,8 +18,6 @@ function About(props) {
           approach and proven methods, we reached a $75 million valuation in
           2023 and are set to grow to $200 million in 2024
         </p>
-
-        <button> {props.button} </button>
       </div>
     </div>
   );

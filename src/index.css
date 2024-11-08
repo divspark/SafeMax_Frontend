@@ -213,7 +213,8 @@ nav .menu-btn,
     width: 50%;
 }
 .about-image img{
-  width: 600px;
+  width: 400px;
+  margin-left: 100px;
 }
 
 #Features{

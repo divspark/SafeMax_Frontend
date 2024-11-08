@@ -2,8 +2,6 @@
 body, html {
   height: 100%;
   margin: 0;
-  background-image: url(bg-image2.jpg);
-  background-size: contain;
 }
 
 .container {
