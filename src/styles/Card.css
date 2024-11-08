@@ -1,0 +1,77 @@
+/* Container for cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    margin-top: 20px;
+  }
+  
+  /* Card styling */
+  .card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+  }
+  
+  /* Image styling */
+  .card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Content styling */
+  .card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-content h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #555;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show 3 lines by default */
+    -webkit-box-orient: vertical;
+  }
+  
+  .card-description.expanded {
+    -webkit-line-clamp: unset;
+  }
+  
+  /* Toggle button */
+  .toggle-button {
+    background-color: #00b7ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin-top: 12px;
+  }
+  
+  /* Responsive styling for smaller devices */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

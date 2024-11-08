@@ -19,7 +19,7 @@ function NavBar() {
     }, []);
 
     return (
-        <nav className={nav ? 'nav active' : 'nav'}>
+        <nav className={nav ? 'nav-active' : 'nav'}>
             <a href='#' className='Logo'>
                 <img src="Logo.png" height={80} alt='Logo' />
             </a>
