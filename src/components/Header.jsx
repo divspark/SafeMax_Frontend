@@ -6,7 +6,7 @@ function Header() {
         <div id='main'>
             <div className='name'>
                 <div className="content">
-                <h1><span>Launch Your App </span> with confidence and creativity</h1>
+                <h1><span>Protecting What Matters with Comprehensive  </span> VAPT Services and Strategic Cybersecurity.</h1>
                 
                 <button className='cv-btn'><a href='#' >Book Consultation</a></button>
                 </div>
