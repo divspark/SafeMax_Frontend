@@ -10,6 +10,7 @@ const Card = ({ image, title, description }) => {
 
   return (
     <div className="card">
+      
       <div className="card-image">
         <img src={image} alt={title} />
       </div>

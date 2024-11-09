@@ -1,0 +1,88 @@
+/* Center the carousel on the page */
+.testimonial-carousel {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  /* Wrapper for arranging testimonials */
+  .testimonial-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.8s ease-in-out;
+    will-change: transform;
+  }
+  
+  /* Individual testimonial card styling */
+  .testimonial-item {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 300px;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 0.8s ease forwards;
+  }
+  
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: bisque;
+  }
+  
+  .testimonial-message {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    padding: 10px;
+  }
+  
+  .testimonial-name {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Keyframes for smooth sliding effect */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .testimonial-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial-item {
+      min-width: 100%;
+      max-width: 90%;
+      height: auto;
+    }
+  }
+  

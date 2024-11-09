@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import WhyChooseUs from "../components/WhyChooseUs";
+import TestimonialCarousel from "../components/Testimonials";
 
 function LandingPage() {
   return (
@@ -13,6 +14,7 @@ function LandingPage() {
       <About />
       <Features />
       <WhyChooseUs />
+      <TestimonialCarousel />
       <Contact />
       <Footer />
     </div>
