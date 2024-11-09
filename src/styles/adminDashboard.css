@@ -58,17 +58,17 @@
 }
 
 /* Status-based background colors */
-.appointment-item.confirmed {
+.appointment-item.Confirmed {
     background-color: #e6f7e6;
     border-left: 4px solid #28a745;
 }
 
-.appointment-item.pending {
+.appointment-item.Pending {
     background-color: #fffbe6;
     border-left: 4px solid #ffc107;
 }
 
-.appointment-item.canceled {
+.appointment-item.Canceled {
     background-color: #fdecea;
     border-left: 4px solid #dc3545;
 }

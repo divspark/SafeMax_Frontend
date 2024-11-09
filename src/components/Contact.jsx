@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    preferredDateTime: '',  // Updated field name
+    preferredDateTime: '',
     message: ''
   });
 
@@ -17,9 +18,26 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    try {
+      const response = await axios.post('http://localhost:5000/api/appointment/create', {
+        clientName: formData.name,
+        clientEmail: formData.email,
+        appointmentDate: formData.preferredDateTime,
+        comments: formData.message
+      });
+      
+      if (response.status === 201) {
+        alert('Appointment created successfully');
+        setFormData({ name: '', email: '', phone: '', preferredDateTime: '', message: '' });
+      } else {
+        alert(`Error: ${response.data.message}`);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred. Please try again.');
+    }
   };
 
   return (
