@@ -21,7 +21,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/appointment/create', {
+      const response = await axios.post('https://safe-max-backend.vercel.app/api/appointment/create', {
         clientName: formData.name,
         clientEmail: formData.email,
         appointmentDate: formData.preferredDateTime,

@@ -22,7 +22,7 @@ const AdminDashboard = () => {
         }
 
         // Send the token in the Authorization header for the request
-        const response = await axios.get('http://localhost:5000/api/appointment/all', {
+        const response = await axios.get('https://safe-max-backend.vercel.app/api/appointment/all', {
           headers: {
             Authorization: `Bearer ${token}`, // Attach token to Authorization header
           },

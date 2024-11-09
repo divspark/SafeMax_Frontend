@@ -24,7 +24,7 @@ export default function Example() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/admin/register', formData);
+      const response = await axios.post('https://safe-max-backend.vercel.app/api/admin/register', formData);
       if (response.status === 201) {
         alert('Account created successfully!');
         navigate('/login'); // Redirect to login page on successful registration
