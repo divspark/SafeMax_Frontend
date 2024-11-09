@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login"; 
 import SignUp from "./pages/SignUp";
 import NavBar from "./components/NavBar";
+import AdminDashboard from "./pages/AdminDashboard";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route exact path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
     </Router>
   );
