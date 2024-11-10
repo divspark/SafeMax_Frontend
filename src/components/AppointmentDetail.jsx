@@ -4,7 +4,7 @@ import '../styles/adminDashboard.css';
 const AppointmentDetail = ({ appointment, onStatusUpdate }) => {
   const handleStatusChange = (newStatus) => {
     // Update status in backend (replace with your API endpoint)
-    fetch(`https://safe-max-backend.vercel.app/api/appointments/${appointment.id}`, {
+    fetch(`https://safe-max-backend.vercel.app/api/appointment/update/${appointment.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
