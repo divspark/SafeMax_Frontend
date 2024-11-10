@@ -41,6 +41,7 @@ const AdminDashboard = () => {
   }, []);
 
   const handleSelectAppointment = (appointment) => {
+    console.log(appointment);
     setSelectedAppointment(appointment);
   };
 
