@@ -42,9 +42,9 @@ const AppointmentDetail = ({ appointment, onStatusUpdate }) => {
       <p><strong>Status:</strong> {appointment.status}</p>
       
       <div className="status-actions">
-        <button onClick={() => handleStatusChange('confirmed')}>Confirm</button>
-        <button onClick={() => handleStatusChange('pending')}>Pending</button>
-        <button onClick={() => handleStatusChange('canceled')}>Cancel</button>
+        <button onClick={() => handleStatusChange('Confirmed')}>Confirm</button>
+        <button onClick={() => handleStatusChange('Pending')}>Pending</button>
+        <button onClick={() => handleStatusChange('Canceled')}>Cancel</button>
       </div>
     </div>
   );
