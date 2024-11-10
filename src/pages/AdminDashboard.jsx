@@ -28,8 +28,6 @@ const AdminDashboard = () => {
           },
         });
 
-        console.log(response.data); // You should see the appointments with `id` field now.
-
         // Assuming the response has appointments with an `id` field
         setAppointments(response.data);
       } catch (error) {
@@ -41,7 +39,6 @@ const AdminDashboard = () => {
   }, []);
 
   const handleSelectAppointment = (appointment) => {
-    console.log(appointment);
     setSelectedAppointment(appointment);
   };
 

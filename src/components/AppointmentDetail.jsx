@@ -7,7 +7,6 @@ const AppointmentDetail = ({ appointment, onStatusUpdate }) => {
     try {
       // Retrieve the token from localStorage
       const token = localStorage.getItem('authToken');
-      console.log("Appointment Detail:", appointment); // Log the appointment object for debugging
   
       // Use appointment._id instead of appointment.id if the former exists
       const appointmentId = appointment.id || appointment._id;
