@@ -7,11 +7,14 @@ const AppointmentDetail = ({ appointment, onStatusUpdate }) => {
     try {
       // Retrieve the token from localStorage
       const token = localStorage.getItem('authToken');
-      console.log(appointment);
-      
+      console.log(appointment);  // Check the full appointment object
+  
+      // Use appointment._id instead of appointment.id if the former exists
+      const appointmentId = appointment.id || appointment._id;
+  
       // Make the PATCH request using axios with the auth token in the headers
       const response = await axios.patch(
-        `https://safe-max-backend.vercel.app/api/appointment/update/${appointment.id}`,
+        `https://safe-max-backend.vercel.app/api/appointment/update/${appointmentId}`,
         { status: newStatus },
         {
           headers: {
@@ -20,14 +23,15 @@ const AppointmentDetail = ({ appointment, onStatusUpdate }) => {
           }
         }
       );
-
+  
       // Handle the response data
       const updatedAppointment = response.data;
-      onStatusUpdate(appointment.id, newStatus);
+      onStatusUpdate(appointmentId, newStatus);
     } catch (error) {
       console.error("Error updating status:", error);
     }
   };
+  
 
   return (
     <div className="appointment-detail">
