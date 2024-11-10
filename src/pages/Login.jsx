@@ -23,6 +23,7 @@ export default function Example() {
     e.preventDefault();
     try {
       const response = await axios.post('https://safe-max-backend.vercel.app/api/admin/login', formData);
+      console.log('Login response:', response);
       const { token } = response.data;
 
       // Save the token to localStorage or a similar secure storage
