@@ -7,6 +7,7 @@ const AppointmentDetail = ({ appointment, onStatusUpdate }) => {
     try {
       // Retrieve the token from localStorage
       const token = localStorage.getItem('authToken');
+      console.log(appointment);
       
       // Make the PATCH request using axios with the auth token in the headers
       const response = await axios.patch(

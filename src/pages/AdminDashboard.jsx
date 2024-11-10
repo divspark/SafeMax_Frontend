@@ -15,7 +15,7 @@ const AdminDashboard = () => {
         // Retrieve token from localStorage
         const token = localStorage.getItem('authToken');
         
-        // If token is not available, you may handle redirection or show an error.
+        // If token is not available, handle redirection or show an error
         if (!token) {
           console.log('No token found, please log in');
           return;
@@ -28,6 +28,9 @@ const AdminDashboard = () => {
           },
         });
 
+        console.log(response.data); // You should see the appointments with `id` field now.
+
+        // Assuming the response has appointments with an `id` field
         setAppointments(response.data);
       } catch (error) {
         console.error("Error fetching appointments:", error);
@@ -44,7 +47,7 @@ const AdminDashboard = () => {
   const handleStatusUpdate = (id, status) => {
     setAppointments((prev) =>
       prev.map((appt) =>
-        appt.id === id ? { ...appt, status } : appt
+        appt._id === id ? { ...appt, status } : appt // Ensure you're checking with the correct key (likely _id)
       )
     );
   };
