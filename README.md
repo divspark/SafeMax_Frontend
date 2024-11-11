@@ -12,13 +12,10 @@ This is the official landing page for **Safemax Security**. The site allows user
   - [Installation](#installation)
   - [Running the Project](#running-the-project)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## About the Project
 
-The **Safemax Security Landing Page** is a responsive React web application that showcases Safemax Security's services and includes a secure login system. Visitors can explore company offerings, view client testimonials, and reach out via the contact form. Registered users can log in, and administrators can access a CMS dashboard.
+The **Safemax Security Landing Page** is a responsive Vite + React web application that showcases Safemax Security's services and includes a secure login system. Visitors can explore company offerings, view client testimonials, and reach out via the contact form. Registered users can log in, and administrators can access a CMS dashboard.
 
 ## Features
 
@@ -39,7 +36,7 @@ The **Safemax Security Landing Page** is a responsive React web application that
 
 ## Technologies Used
 
-- **Frontend**: React, React Router for navigation
+- **Frontend**: Vite, React, React Router for navigation
 - **UI Components**: CSS for styling
 - **Backend**: Assumed to be connected (e.g., Node.js/Express backend)
 - **Database**: Assumed to be used for user authentication (e.g., MongoDB, PostgreSQL)
@@ -72,14 +69,25 @@ The **Safemax Security Landing Page** is a responsive React web application that
 
 ### Running the Project
 
-To start the development server, run:
+To start the Vite development server, run:
 ```bash
-npm start
+npm run dev
 # or
-yarn start
+yarn dev
 ```
 
-The project should open in your browser at `http://localhost:3000`.
+The project should open in your browser at `http://localhost:5173`.
+
+### Building for Production
+
+To build the project for production, run:
+```bash
+npm run build
+# or
+yarn build
+```
+
+This will generate a `dist` folder with the optimized production build.
 
 ## Project Structure
 
@@ -89,9 +97,12 @@ safemax-security/
 ├── src/
 │   ├── components/       # Reusable components (NavBar, Footer, etc.)
 │   ├── pages/            # Main pages (LandingPage, Login, SignUp, AdminDashboard)
-│   ├── App.js            # Main app component with route definitions
-│   └── index.js          # Entry point for React
+│   ├── App.jsx           # Main app component with route definitions
+│   └── main.jsx          # Entry point for Vite + React
+├── vite.config.js        # Vite configuration
 ├── package.json          # Project dependencies and scripts
 └── README.md             # Project documentation
 ```
+
+
 
